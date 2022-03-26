@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>ChitChat</title>
+</head>
+
+<body>
+    <h1 class="title">ChitChat 💬</h1>
+    <h4 class="chatters-total " id="chatters-total ">Total ChitChatters: 2</h4>
+    <div class=" main-container ">
+        <div class="chatter-name">
+            <span><i class="fa-solid fa-user "></i></span>
+            <input type="text" id="name-input" class="name-input" maxlength="30 " value="Anonymous ">
+        </div>
+        <ul class="chat-container" id="chat-container">
+            <li class="chat-left ">
+                <p class="chat ">Namaste!
+                    <span class="name-date">Desperate D 🕧 25 Mar 2022</span></p>
+            </li>
+            <li class="chat-right ">
+                <p class="chat ">Namaste, how have you been?
+                    <span class="name-date">Passionate P 🕧 25 Mar 2022</span></p>
+            </li>
+            <li class="chat-action">
+                <p class="action" id="action">Desperate D is typing...</p>
+            </li>
+        </ul>
+        <form class="chat-form" id="chat-form">
+            <input type="text" class="chat-input" id="chat-input">
+            <div class=" divider "></div>
+            <button type="submit " class="send-button "><span><i class="fa-solid fa-paper-plane "></i></span></button>
+        </form>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js "></script>
+</body>
+
+</html>
